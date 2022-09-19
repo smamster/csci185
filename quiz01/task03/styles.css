@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin: 25vh;
+
+        }
+
+
+section {
+    border: solid 4px orangered;
+    width: 200px;
+    height: 75px;
+    display: flex;
+    flex-flow: column;
+    height: 50px;
+    align-content: center;
+    margin: 1vh;
+}
+.grid-container section {
+    display: flex;
+    justify-content: center;
+    align-items: center; }

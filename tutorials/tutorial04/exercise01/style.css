@@ -1,0 +1,18 @@
+body {background-color: rgb(223, 218, 216);}
+.header {
+    padding: 60px;
+    text-align: center;
+    vertical-align: center;
+    background: #b4cded;
+    color:aliceblue;
+    font-size: 30px;
+  font: impact
+
+  }
+  .row img { 
+    display: inline; 
+    width: 100px; 
+    height: auto; 
+    margin: 0 20px 20px 0; 
+    padding: 0; 
+    }
