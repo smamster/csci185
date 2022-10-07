@@ -1,0 +1,249 @@
+body {
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    color: #fff;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/**********/
+/* Layout */
+/**********/
+aside,
+footer,
+header,
+nav,
+section,
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    overflow: hidden;
+    margin: 0px;
+    height: 100vh;
+    /* body tag is a grid */
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-template-rows: auto 100px;
+}
+
+aside {
+    background-color: #000;
+    grid-column-start: 1;
+}
+
+header {
+    background: #111;
+    position: sticky;
+    top: 0px;
+}
+
+/* Uncomment to see borders:  */
+/* header, nav, article {
+    border: solid 5px teal;
+    padding: 10px;
+}
+main {
+    border: solid 5px hotpink;
+    padding: 10px;
+} */
+
+main {
+    background: #111;
+    grid-column-start: 2;
+    overflow-y: auto;
+    z-index: 3;
+}
+
+footer {
+    background: #222;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+}
+
+
+/***************************/
+/* Accessories & Florishes */
+/***************************/
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 4px solid transparent;
+    border-radius: 16px;
+    background-clip: padding-box;
+    min-height: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: hsla(0, 0%, 100%, .3);
+}
+
+/***************************/
+/* Part A: Left Navigation */
+/***************************/
+
+/* Your Code Here */
+
+
+
+/********************************/
+/* Part B: Header & Nav Styling */
+/********************************/
+
+/* Your Code Here */
+
+
+
+
+
+/*************************/
+/* Part C: Artists Panel */
+/*************************/
+
+/* Your Code Here.
+   For the desktop view, there should be 5 cards per row.
+*/
+
+
+
+
+
+
+/**************************/
+/* Part D: Responsive UIs */
+/**************************/
+
+/* Your Code Here */
+
+
+aside i {
+    margin-right: 10px;
+}
+
+aside a {
+    padding: 10px;
+}
+
+aside h1 {
+    padding-top: 5px;
+    padding-left: 8px;
+}
+
+.fa-spotify {
+    font-size: 35px;
+}
+
+aside .selected {
+    border-left: rgb(31, 179, 61) solid 2px;
+}
+
+aside {
+    padding-left: 10px;
+}
+
+header {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+header a {
+    margin: 20px;
+    margin-top: 25px;
+}
+
+#upgrade {
+    border: rgb(255, 255, 255) solid 1px;
+    border-radius: 42px;
+    padding: 10px 40px;
+}
+
+#profile {
+    background-color: rgb(65, 64, 64);
+    border-radius: 42px;
+    padding: 10px 40px;
+}
+
+nav {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+nav a {
+    padding: 10px;
+}
+
+nav .selected {
+    border-bottom: rgb(31, 179, 61) solid 2px;
+}
+
+nav {
+    padding: 5px
+}
+
+#featured-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 12px;
+    column-gap: 12px;
+
+}
+
+.artist-card {
+    width: 100%;
+    background-color: rgb(49, 46, 46);
+    padding: 10px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.artist-card img {
+    width: 100%;
+}
+
+div h2 {
+    font-size: small;
+}
+
+@media screen and (max-width: 1000px) {
+    #featured-content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    #featured-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    aside {
+        display: none;
+    }
+
+    body {
+
+        grid-template-columns: 0px 100vh;
+    }
+
+
+}
