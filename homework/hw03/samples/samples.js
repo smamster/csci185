@@ -117,7 +117,7 @@ function setup() {
     ////////////////
     // https://p5js.org/reference/#/p5/rect
     rect(30, 500, 50, 100);
-    rect(130, 500, 50, 100, 200); // smoothing
+    rect(130, 500, 50, 100, 100); // smoothing00
 
 
     drawGrid(canvasWidth, canvasHeight);
