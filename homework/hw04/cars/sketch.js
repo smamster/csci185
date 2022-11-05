@@ -66,8 +66,11 @@ function draw() {
 
     if (t1.x < 0 - 100) {
         t1.x = 1500
+        t1.speed = -4
     }
-    t1.x += t1.speed;
+    t1.x += (t1.speed);
+
+    t1.speed -= .2;
 
     // redraw the car:
     drawCar(c1.x, c1.y, c1.width, c1.color);
