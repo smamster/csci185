@@ -20,7 +20,8 @@ generatesnowflakes ()
 
 function draw() {
   clear ()
-
+  fill('black')
+  rect(30, 700, canvasWidth, 100);
     drawCreature(x , y, 300, '#bfdc65', '#abb880');
     drawCreature(200, 693, 150, '#aebb83', '#227876');
     
@@ -102,7 +103,7 @@ function drawCreature(x, y, size, primaryColor = 'white', secondaryColor = 'blac
 
 function mousePressed() {
     drawCreature(mouseX, mouseY, 200);
-let snowman = {x:mouseX, y:mouseY, size: Math.random() * 50 + 50, speed: Math.random() * 5}
+let snowman = {x:mouseX, y:mouseY, size: Math.random() * 200 + 50, speed: Math.random() * 5}
 snowmanlist.push(snowman)
 }
 
