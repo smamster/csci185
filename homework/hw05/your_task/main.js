@@ -108,7 +108,7 @@ async function getArtist(term) {
     const artistCard = `   
 <section class="artist-card" id="${artistData[0].image_url.id}">
 <div>
-    <img alt="artist of ${artistData[counter].name}" src="${artistData[0].image_url}">
+    <img alt="stuff" src="${artistData[0].image_url}">
     <h2>${artistData[0].name} (${artistData[0].popularity})</h2>
     <div class="footer">
         <a href="${artistData[0].spotitfy_url}" target="_blank">
