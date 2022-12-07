@@ -20,8 +20,8 @@ generatesnowflakes ()
 
 function draw() {
   clear ()
-  fill('black')
-  rect(30, 700, canvasWidth, 100);
+  fill('white')
+  rect(000, 800, 10000, 300);
     drawCreature(x , y, 300, '#bfdc65', '#abb880');
     drawCreature(200, 693, 150, '#aebb83', '#227876');
     
